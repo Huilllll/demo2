@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-04-19 19:24:54
+ * @LastEditTime: 2020-04-19 19:33:10
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \suidao_projectc:\Users\12768\Desktop\demo2\de.html
+ -->
 
  <!DOCTYPE html>
  <html lang="en">
@@ -7,82 +15,90 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Document</title>
  </head>
-  <style>
-    .title {
-      font-size: 15px;
-      color: #aeafb0;
-      margin: 20px;
-      height: 20px;
-      font-family: fantasy;
-    }
+ <style>
+ .title {
+  font-size: 15px;
+  color: #aeafb0;
+  margin: 20px;
+  height: 20px;
+  font-family: fantasy;
+}
 
-    #columns {
-      /* padding: 20px; */
-    }
+#columns {
+  /* padding: 20px; */
+}
 
-    .column {
-      /* width: 100%; */
-      height: 50px;
-      line-height: 50px;
-      border: 1px solid #f5f0f0;
-      box-shadow: 5px;
-      cursor: move;
-    }
+.column {
+  /* width: 100%; */
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #f5f0f0;
+  box-shadow: 5px;
+  cursor: move;
+}
 
-    .column .header {
-      font-size: 14px;
-      color: black;
-      background: #fff;
-    }
+.column .header {
+  font-size: 14px;
+  color: black;
+  background: #fff;
+}
+.columns li{
+  background: red;
+  width: 30px;
+  height: 40px;
+}
+.column .icon-right {
+  width: 20px;
+  float: right;
+  margin-top: -39px;
+        margin-right: 10px;
+}
 
-    .column .icon-right {
-      width: 20px;
-      float: right;
-      margin-top: -39px;
-            margin-right: 10px;
-    }
 
+.num-icon {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+/* .header:hover .num-icon{
+  transform: translateY(-50px);
+filter: drop-shadow(#851869 0 50px);
+} */
 
-    .num-icon {
-      width: 20px;
-      vertical-align: middle;
-      margin-right: 5px;
-      margin-left: 10px;
-    }
-    /* .header:hover .num-icon{
-      transform: translateY(-50px);
-    filter: drop-shadow(#851869 0 50px);
-    } */
-
-  .column  .over {
-      background-color: rgb(41, 134, 255);
-    }
-  </style>
-
+.column  .over {
+  background-color: rgb(41, 134, 255);
+}
+</style>
 <body>
   <p class="title">拖动右边把手排序</p>
-<!-- 需要改为使用ul>li -->
-  <div id="columns">
-    <div class="column" draggable="true">
-      <div class="header"><img class="num-icon" src="./img/1-.png"><span>A樱桃🍒</span></div><img id="img"
-        class="icon-right" src="./img/展开.png" />
-    </div>
-    <div class="column" draggable="true">
-      <div class="header"><img class="num-icon" src="./img/2-.png"><span class="header">B苹果🍎</span></div><img id="img1"
-        class="icon-right" src="./img/展开.png" />
-    </div>
-    <div class="column" draggable="true">
-      <div class="header"><img class="num-icon" src="./img/3-.png"><span class="header">C香蕉🍌</span></div><img id="img2"
-        class="icon-right" src="./img/展开.png" />
-    </div>
-    <div class="column" draggable="true">
-      <div class="header"><img class="num-icon" src="./img/4-.png"><span class="header">D牛奶🐂</span></div><img id="img3"
-        class="icon-right" src="./img/展开.png" />
-    </div>
+  <ol>
+    <li>222</li>
+    <li>222</li>
 
-  </div>
+  </ol>
+<!-- 需要改为使用ul>li -->
+  <ol id="columns">
+    <li class="column" draggable="true">
+      <div class="header"><span>A樱桃🍒</span></div><img id="img"
+        class="icon-right" src="./img/展开.png" />
+    </li>
+    <li class="column" draggable="true">
+      <div class="header"><span class="header">B苹果🍎</span></div><img id="img1"
+        class="icon-right" src="./img/展开.png" />
+    </li>
+    <li class="column" draggable="true">
+      <div class="header"><span class="header">C香蕉🍌</span></div><img id="img2"
+        class="icon-right" src="./img/展开.png" />
+    </li>
+    <li class="column" draggable="true">
+      <div class="header"><span class="header">D牛奶🐂</span></div><img id="img3"
+        class="icon-right" src="./img/展开.png" />
+    </li>
+
+  </ol>
 </body>
-<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+<!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script> -->
 <script>
 //获取每一栏
   var columns = document.querySelectorAll('#columns .column');

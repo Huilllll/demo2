@@ -12,7 +12,6 @@
       font-size: 15px;
       color: #aeafb0;
       margin: 20px;
-      height: 20px;
       font-family: fantasy;
     }
 
@@ -61,26 +60,31 @@
 
 <body>
   <p class="title">拖动右边把手排序</p>
-<!-- 需要改为使用ul>li -->
-  <div id="columns">
-    <div class="column" draggable="true">
-      <div class="header"><img class="num-icon" src="./img/1-.png"><span>A樱桃🍒</span></div><img id="img"
-        class="icon-right" src="./img/展开.png" />
-    </div>
-    <div class="column" draggable="true">
-      <div class="header"><img class="num-icon" src="./img/2-.png"><span class="header">B苹果🍎</span></div><img id="img1"
-        class="icon-right" src="./img/展开.png" />
-    </div>
-    <div class="column" draggable="true">
-      <div class="header"><img class="num-icon" src="./img/3-.png"><span class="header">C香蕉🍌</span></div><img id="img2"
-        class="icon-right" src="./img/展开.png" />
-    </div>
-    <div class="column" draggable="true">
-      <div class="header"><img class="num-icon" src="./img/4-.png"><span class="header">D牛奶🐂</span></div><img id="img3"
-        class="icon-right" src="./img/展开.png" />
-    </div>
+  <ol>
+    <li>222</li>
+    <li>222</li>
 
-  </div>
+  </ol>
+<!-- 需要改为使用ul>li -->
+  <ol id="columns">
+    <li class="column" draggable="true">
+      <div class="header"><span>A樱桃🍒</span></div><img id="img"
+        class="icon-right" src="./img/展开.png" />
+    </li>
+    <li class="column" draggable="true">
+      <div class="header"><span class="header">B苹果🍎</span></div><img id="img1"
+        class="icon-right" src="./img/展开.png" />
+    </li>
+    <li class="column" draggable="true">
+      <div class="header"><span class="header">C香蕉🍌</span></div><img id="img2"
+        class="icon-right" src="./img/展开.png" />
+    </li>
+    <li class="column" draggable="true">
+      <div class="header"><span class="header">D牛奶🐂</span></div><img id="img3"
+        class="icon-right" src="./img/展开.png" />
+    </li>
+
+  </ol>
 </body>
 <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
 <script>
